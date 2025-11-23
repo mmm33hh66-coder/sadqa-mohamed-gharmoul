@@ -88,7 +88,7 @@
     const counterDisplay = document.getElementById('dhikr-counter');
     const dhikrPhrase = document.getElementById('dhikr-phrase');
     
-    // قائمة الأذكار لتغييرها كل 1أو 100 تسبيحة مثلاً
+    // قائمة الأذكار لتغييرها كل 2 أو 100 تسبيحة مثلاً
     const dhikrList = [
         "اللهم اغفر له وارحمه",
         "اللهم اجعل قبره روضه من رياض الجنه",
@@ -107,7 +107,7 @@
         counterDisplay.textContent = count;
         
         //تمثال لتغيير الذكر بعد كل3 مراة
-        if (count % 1 === 0 && dhikrList.length > 1) {
+        if (count % 2 === 0 && dhikrList.length > 1) {
             dhikrIndex = (dhikrIndex + 1) % dhikrList.length;
             dhikrPhrase.textContent = dhikrList[dhikrIndex];
         }
