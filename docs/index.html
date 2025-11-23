@@ -71,13 +71,13 @@
     
     <div class="dhikr-box">
         <div class="dhikr-text" id="dhikr-phrase">
-            سبحان الله وبحمده، سبحان الله العظيم
+     اللهم اغفر له وارحمه
         </div>
         <div class="counter-display" id="dhikr-counter">0</div>
         <button class="dhikr-button" onclick="increaseCounter()">اضغط للتسبيح</button>
     </div>
 
-    <p style="font-size:14px; margin-top:30px;">اللهم تقبل هذا العمل واجعله في ميزان حسناته.</p>
+    <p style="font-size:14px; margin-top:30px;">المهندس:محمد كامل الغرمول .اللهم تقبل هذا العمل واجعله في ميزان حسناته.</p>
 
 </div>
 
@@ -88,12 +88,11 @@
     const counterDisplay = document.getElementById('dhikr-counter');
     const dhikrPhrase = document.getElementById('dhikr-phrase');
     
-    // قائمة الأذكار لتغييرها كل 33 أو 100 تسبيحة مثلاً
+    // قائمة الأذكار لتغييرها كل 3أو 100 تسبيحة مثلاً
     const dhikrList = [
-        "سبحان الله وبحمده، سبحان الله العظيم",
-        "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير",
-        "أستغفر الله العظيم وأتوب إليه",
-        "الحمد لله",
+        "اللهم اغفر له وارحمه",
+        "اللهم اجعل قبره روضه من رياض الجنه",
+        "اللهم اجعله في جنات النعيم مع الابرار والصديقين",
         "لا حول ولا قوة إلا بالله"
     ];
     let dhikrIndex = 0;
@@ -102,8 +101,8 @@
         count++;
         counterDisplay.textContent = count;
         
-        // مثال لتغيير الذكر بعد كل 33 مرة
-        if (count % 33 === 0 && dhikrList.length > 1) {
+        //تمثال لتغيير الذكر بعد كل3 مراة
+        if (count % 3 === 0 && dhikrList.length > 1) {
             dhikrIndex = (dhikrIndex + 1) % dhikrList.length;
             dhikrPhrase.textContent = dhikrList[dhikrIndex];
         }
