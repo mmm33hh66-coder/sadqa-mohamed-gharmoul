@@ -1,116 +1,119 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <title>صدقة جارية على محمد منصور الغرمول</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
+box-shadow: 0 4px 10px rgba(211, 47, 47, 0.3);
         }
-        .container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            max-width: 600px;
-            margin: 50px auto;
+
+        .reset-button:hover {
+            background-color: #b71c1c;
         }
-        h1 {
-            color: #1a4d2e; /* لون أخضر داكن */
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        p {
-            color: #555;
-            font-size: 18px;
-            margin-bottom: 30px;
-        }
-        .dhikr-box {
-            background-color: #e8f5e9; /* خلفية فاتحة للأذكار */
-            padding: 20px;
-            border-radius: 6px;
-            margin-bottom: 20px;
-            border-left: 5px solid #1a4d2e;
-        }
-        .dhikr-text {
-            font-size: 20px;
-            font-weight: bold;
-            color: #1a4d2e;
-            margin-bottom: 15px;
-        }
-        .counter-display {
-            font-size: 40px;
-            color: #d84315; /* لون مميز للعدد */
-            margin-bottom: 20px;
-        }
-        .dhikr-button {
-            background-color: #1a4d2e;
-            color: white;
-            padding: 15px 30px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 22px;
-            transition: background-color 0.3s;
-            display: block;
-            width: 100%;
-        }
-        .dhikr-button:hover {
-            background-color: #2e7d32;
+
+        @media (max-width: 600px) {
+            .dhikr-grid {
+                grid-template-columns: 1fr; /* عمود واحد على الشاشات الصغيرة */
+            }
+            .container {
+                padding: 20px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            .sub-heading {
+                font-size: 1em;
+            }
+            .dhikr-text {
+                font-size: 1em;
+            }
+            .counter-display {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5em;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <h1>صدقة جارية</h1>
+        <p class="sub-heading">
+            اللهم اجعل ثواب هذه الأذكار وقراءة القرآن للمرحوم<br>
+محمد منصور الغرمول
+        </p>
+        <p class="sub-heading">
+            إنا لله وإنا إليه راجعون<br>
+            لا حول ولا قوة إلا بالله العلي العظيم<br>
+            إن لله ما أخذ، وله ما أعطى، وكل عنده بأجل مسمى، فلنصبر ولنحتسب
+        </p>
 
-<div class="container">
-    <h1>صدقة جارية على روح</h1>
-    <p>المغفور له بإذن الله: **محمد منصور الغرمول**</p>
-    
-    <div class="dhikr-box">
-        <div class="dhikr-text" id="dhikr-phrase">
-            سبحان الله وبحمده، سبحان الله العظيم
+        <div class="dhikr-grid">
+            <div class="dhikr-card" data-dhikr-id="1">
+                <div class="dhikr-text">اللهم ارفع درجاته</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="2">
+                <div class="dhikr-text">اللهم اعف عنه</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="3">
+                <div class="dhikr-text">اللهم اغفر له</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="4">
+                <div class="dhikr-text">اللهم ارحمه</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="5">
+                <div class="dhikr-text">الله أكبر</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="6">
+                <div class="dhikr-text">الحمد لله</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="7">
+                <div class="dhikr-text">لا إله إلا الله</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="8">
+                <div class="dhikr-text">سبحان الله العظيم</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="9">
+                <div class="dhikr-text">سبحان الله وبحمده</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
+
+            <div class="dhikr-card" data-dhikr-id="10">
+                <div class="dhikr-text">لا حول ولا قوة إلا بالله</div>
+                <div class="counter-display">0 / 33</div>
+            </div>
         </div>
-        <div class="counter-display" id="dhikr-counter">0</div>
-        <button class="dhikr-button" onclick="increaseCounter()">اضغط للتسبيح</button>
+
+        <button class="reset-button">تصفير العدادات</button>
     </div>
 
-    <p style="font-size:14px; margin-top:30px;">اللهم تقبل هذا العمل واجعله في ميزان حسناته.</p>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const dhikrCards = document.querySelectorAll('.dhikr-card');
+            const resetButton = document.querySelector('.reset-button');
+            const counts = {}; // تخزين العدادات لكل ذكر
 
-</div>
+            // تحميل العدادات المحفوظة من Local Storage عند تحميل الصفحة
+            dhikrCards.forEach(card => {
+                const dhikrId = card.dataset.dhikrId;
+                const savedCount = localStorage.getItem(`dhikrCount_${dhikrId}`);
+                if (savedCount) {
+                    counts[dhikrId] = parseInt(savedCount, 10);
+                } else {
+                    counts[dhikrId] = 0;
+                }
+                updateDisplay(card, dhikrId);
+            });
 
-<script>
-    // كود JavaScript لعداد الأذكار
-    
-    let count = 0;
-    const counterDisplay = document.getElementById('dhikr-counter');
-    const dhikrPhrase = document.getElementById('dhikr-phrase');
-    
-    // قائمة الأذكار لتغييرها كل 33 أو 100 تسبيحة مثلاً
-    const dhikrList = [
-        "سبحان الله وبحمده، سبحان الله العظيم",
-        "لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير",
-        "أستغفر الله العظيم وأتوب إليه",
-        "الحمد لله",
-        "لا حول ولا قوة إلا بالله"
-    ];
-    let dhikrIndex = 0;
-
-    function increaseCounter() {
-        count++;
-        counterDisplay.textContent = count;
-        
-        // مثال لتغيير الذكر بعد كل 33 مرة
-        if (count % 33 === 0 && dhikrList.length > 1) {
-            dhikrIndex = (dhikrIndex + 1) % dhikrList.length;
-            dhikrPhrase.textContent = dhikrList[dhikrIndex];
-        }
-    }
-    
-    // يمكنك حفظ العداد في المتصفح إذا أردت أن يبقى العدد عند إغلاق الصفحة (هذا سيتطلب إضافة المزيد من الكود)
-</script>
-
-</body>
-</html>
+            // تحديث العداد عند النقر على الذكر
+            dhikrCards.
