@@ -106,7 +106,7 @@
         count++;
         counterDisplay.textContent = count;
         
-        //تمثال لتغيير الذكر بعد كل3 مراة
+        //تمثال لتغيير الذكر بعد كل 2 مرات
         if (count % 2 === 0 && dhikrList.length > 1) {
             dhikrIndex = (dhikrIndex + 1) % dhikrList.length;
             dhikrPhrase.textContent = dhikrList[dhikrIndex];
