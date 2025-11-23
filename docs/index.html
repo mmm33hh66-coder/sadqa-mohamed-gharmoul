@@ -74,7 +74,7 @@
      اللهم اغفر له وارحمه
         </div>
         <div class="counter-display" id="dhikr-counter">0</div>
-        <button class="dhikr-button" onclick="increaseCounter()">اضغط للتسبيح</button>
+        <button class="dhikr-button" onclick="increaseCounter()">اضغط للدعاء </button>
     </div>
 
     <p style="font-size:14px; margin-top:30px;">المهندس:محمد كامل الغرمول .اللهم تقبل هذا العمل واجعله في ميزان حسناته.</p>
@@ -88,7 +88,7 @@
     const counterDisplay = document.getElementById('dhikr-counter');
     const dhikrPhrase = document.getElementById('dhikr-phrase');
     
-    // قائمة الأذكار لتغييرها كل 3أو 100 تسبيحة مثلاً
+    // قائمة الأذكار لتغييرها كل 1أو 100 تسبيحة مثلاً
     const dhikrList = [
         "اللهم اغفر له وارحمه",
         "اللهم اجعل قبره روضه من رياض الجنه",
@@ -102,7 +102,7 @@
         counterDisplay.textContent = count;
         
         //تمثال لتغيير الذكر بعد كل3 مراة
-        if (count % 3 === 0 && dhikrList.length > 1) {
+        if (count % 1 === 0 && dhikrList.length > 1) {
             dhikrIndex = (dhikrIndex + 1) % dhikrList.length;
             dhikrPhrase.textContent = dhikrList[dhikrIndex];
         }
